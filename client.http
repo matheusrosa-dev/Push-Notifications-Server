@@ -1,0 +1,23 @@
+@baseUrl = http://localhost:3333
+
+
+POST {{baseUrl}}/send-notification
+Content-Type: application/json
+
+{
+    "expoPushToken":""
+}
+
+###
+
+POST {{baseUrl}}/send-many-notifications
+Content-Type: application/json
+
+{
+    "expoPushTokens":[]
+}
+
+
+###
+
+GET {{baseUrl}}/receipts

@@ -1,0 +1,22 @@
+{
+  "name": "push-notifications-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --experimental-strip-types --watch src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "expo-server-sdk": "^3.15.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "typescript": "^5.8.3"
+  }
+}
