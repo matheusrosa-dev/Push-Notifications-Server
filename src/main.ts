@@ -1,6 +1,5 @@
 import express from "express";
 import { notification } from "./utils.ts";
-import "./expo.ts";
 import { expo, validateExpoPushTokens } from "./expo.ts";
 
 const app = express();
