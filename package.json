@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --experimental-strip-types --watch src/main.ts"
+    "dev": "node --env-file .env --experimental-strip-types --watch src/main.ts"
   },
   "keywords": [],
   "author": "",

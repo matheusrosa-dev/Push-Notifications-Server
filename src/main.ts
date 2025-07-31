@@ -6,8 +6,6 @@ import { expo, validateExpoPushTokens } from "./expo.ts";
 const app = express();
 app.use(express.json());
 
-//TODO: VERIFICAR ACCESS TOKEN
-
 const ticketIds: string[] = [];
 
 app.post("/send-notification", async (req, res) => {
@@ -44,7 +42,7 @@ app.post("/send-notification", async (req, res) => {
 app.post("/send-many-notifications", async (req, res) => {
   const expoPushTokens = req.body.expoPushTokens as string[];
 
-  if (validateExpoPushTokens(expoPushTokens)) {
+  if (!validateExpoPushTokens(expoPushTokens)) {
     return res.status(400).json({
       message: "Token inválido",
     });
